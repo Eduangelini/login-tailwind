@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Adding Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap"
+    rel="stylesheet">
+
+  <!-- Adding CSS -->
+  <link rel="stylesheet" href="./styles/reset.css">
+  <link rel="stylesheet" href="./styles/style.css">
+
+  <!-- Adding fontAwesome -->
+  <script src="https://kit.fontawesome.com/c46e2ab208.js" crossorigin="anonymous"></script>
+
+  <!-- Adding TailWind CSS (CDN) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Adding Tailwind Config -->
+  <script src="./js/tailwind-config.js"></script>
+
+  <title>Login Page with Tailwind</title>
+
+</head>
+
+<body class="bg-background-1 font-noto flex h-screen justify-center items-center">
+
+  <main class="flex items bg-button-background rounded-xl shadow-shadow shadow-down lg:w-3/4">
+
+    <section class="bg-button-background hidden lg:block w-1/2 m-auto lg:rounded-l-xl">
+      <img class="bg-[url('./assets/mentalhealth.jpg')] rounded-xl m-10 shadow-shadow" src="./assets/mentalhealth.jpg"
+        width="350px" alt="">
+    </section>
+
+    <section class="bg-button-background p-8 gap-2 flex flex-col rounded-xl lg:w-1/2 lg:rounded-l-none">
+
+      <div class="flex flex-col">
+        <!-- Image -->
+        <img src="./assets/psicare.svg" class="h-20" alt="">
+      </div>
+
+      <div class="text-center">
+        <!-- Texts -->
+        <h1 class="text-3xl mb-2 text-details font-bold ">LOGIN</h1>
+        <p class="text-base text-primary mb-2 ">Please enter your login and password!</p>
+      </div>
+
+      <!-- Login with external services -->
+      <div class="flex flex-col items-center gap-3">
+        <button
+          class="text-details text-sm font-bold w-3/4 p-1 border-none bg-button-background hover:bg-button-background-2 py-2 mb-2 border rounded shadow-shadow-2 duration-150 lg:items-center"><i
+            class="fa-brands fa-google mx-4" style="color: #7c3ef0;"></i>Sign
+          in with Google</button>
+        <button
+          class="text-details text-sm font-bold w-3/4 p-1 border-none bg-button-background hover:bg-button-background-2 py-2 mb-2 border rounded shadow-shadow-2 duration-150 lg:items-center"><i
+            class="fa-brands fa-facebook-f mx-4" style="color: #7c3ef0;"></i>Sign
+          in with Facebook</button>
+      </div>
+
+      <p class="text-primary text-sm text-center">or</p>
+
+      <!-- Form area -->
+      <div class="flex flex-col gap-1">
+        <label class="text-xl text-details font-bold" for="lname">Login:</label>
+        <input
+          class="text-xm font-bold border rounded p-1.5 shadow-shadow-2 focus:outline-none hover:border-details hover:ring-1 hover:ring-details focus:border-details focus:ring-1 focus:ring-details"
+          type="email" id="lname" name="lname" required>
+        <label class="text-xl text-details font-bold" for="lname">Password:</label>
+        <input
+          class="text-xm font-bold border rounded mb-2 p-1.5 shadow-shadow-2 focus:outline-none hover:border-details hover:ring-1 hover:ring-details focus:border-details focus:ring-1 focus:ring-details"
+          type="password" id="lname" name="lname" required>
+      </div>
+
+      <!-- Submit button -->
+      <button
+        class="text-xl font-bold text-white border-none bg-details opacity-75 hover:bg-details hover:opacity-100 py-2 mb-2 border rounded shadow-shadow-2 duration-150 lg:items-center"
+        type="button">Login</button>
+
+
+      <p class="text-xs text-primary text-center">Forgot your password? <a
+          class="text-details opacity-75 hover:opacity-100 font-bold" href="#">Click
+          here</a></p>
+
+      <!-- Footer -->
+      <div class="flex justify-between mt-3">
+        <p class="text-xs text-primary">ddx @2023</p>
+        <p class="text-xs text-primary">Privacy Policy</p>
+      </div>
+
+    </section>
+
+  </main>
+
+</body>
+
+<!-- Adding Js -->
+<script type="text/javascript" src="./js/index.js"></script>
+
+</html>

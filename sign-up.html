@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Adding fontAwesome -->
+
+
+  <!-- Adding Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap"
+    rel="stylesheet">
+
+  <!-- Adding CSS -->
+  <link rel="stylesheet" href="./styles/reset.css">
+  <link rel="stylesheet" href="./styles/style.css">
+
+  <!-- Adding TailWind CSS (CDN) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Adding Tailwind Config -->
+  <script src="./js/tailwind-config.js"></script>
+
+  <title>Login Page with Tailwind</title>
+
+</head>
+
+<body class="bg-blue-300 font-noto flex h-screen justify-center items-center">
+
+  <main class="flex items px-6">
+
+    <section class="bg-blue-500 hidden">
+      <img src="./assets/mentalhealth.jpg" width="300px" alt="">
+    </section>
+
+    <section class="bg-blue-700 p-8 gap-1 flex flex-col ">
+
+      <div class="flex flex-col">
+        <img src="./assets/psicare.svg" class="h-20" alt="">
+      </div>
+
+      <div class="text-center">
+        <!-- Texts -->
+        <h1 class="text-2xl">Create your account</h1>
+        <p class="text-base">Enter the fields below to get started</p>
+
+        <!-- Login with external services -->
+        <button class="text-sm">Sign in with Google</button>
+        <button class="text-sm">Sign in with Facebook</button>
+        <p class="text-sm">or</p>
+      </div>
+
+
+      <!-- Form area -->
+      <label class="text-xs font-bold" for="fname">Full name*</label>
+      <input class="text-xs font-bold" type="text" id="fname" name="fname" required>
+      <label class="text-xs font-bold" for="lname">Email address*</label>
+      <input class="text-xs font-bold" type="email" id="lname" name="lname" required>
+      <label class="text-xs font-bold" for="lname">Password*</label>
+      <input class="text-xs font-bold" type="password" id="lname" name="lname" required>
+
+      <!-- Checkmark verification -->
+      <label>
+        <input type="checkbox" id="uppercase-check">
+        <span class="text-xs">one lowercase character</span>
+        <span></span>
+      </label>
+      <label>
+        <input type="checkbox" id="uppercase-check">
+        <span class="text-xs">one special</span>
+        <span></span>
+      </label>
+      <label>
+        <input type="checkbox" id="uppercase-check">
+        <span class="text-xs">one uppercase character</span>
+        <span></span>
+      </label>
+      <label>
+        <input type="checkbox" id="uppercase-check">
+        <span class="text-xs">8 character minimum</span>
+        <span></span>
+      </label>
+      <label>
+        <input type="checkbox" id="uppercase-check">
+        <span class="text-xs">one number</span>
+        <span></span>
+      </label>
+
+      <!-- Submit button -->
+      <button class="text-xl font-bold text-white bg-red-300" type="button">Create account</button>
+
+
+      <p class="text-base">Already have an account? <a href="#">Log in</a></p>
+      <div class="">
+        <p class="text-xs">@2023 ddx</p>
+        <p class="text-xs">Privacy Policy</p>
+      </div>
+
+    </section>
+
+  </main>
+
+</body>
+
+<!-- Adding Js -->
+<script type="text/javascript" src="./js/index.js"></script>
+
+</html>
